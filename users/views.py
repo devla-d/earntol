@@ -11,3 +11,11 @@ def withdraw(request):
 
 def transactions_(request):
     return render(request, "users/transactions.html")
+
+
+def settings(request):
+    return render(request, "users/settings.html")
+
+
+def change_password(request):
+    return render(request, "users/change-password.html")
