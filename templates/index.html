@@ -1,0 +1,668 @@
+{% extends "layouts/home.html" %}<!---->
+{% block title %} welcome {% endblock title %} {% block banner %}
+
+<!-------HERO SECTION-->
+<div id="heroslider" class="carousel carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active item-1 bg-parallax"></div>
+
+    <div class="carousel-item item-2 bg-parallax"></div>
+  </div>
+</div>
+<div id="hero-content">
+  <div class="container">
+    <div class="content1">
+      <p class="title text-uppercase">
+        Join over 2.000.000 and to INVEST AND GET PAID INSTANTLY
+      </p>
+      <h3>START Investments TODAY!</h3>
+      <p class="second">
+        It�s super simple . As soon as you�ve set up your account, you can start
+        to invest !
+      </p>
+      <div class="buttons">
+        <a href="{% url 'sign_up' %}" class="btn btn-primary mr-3"
+          ><span class="txt">Get Started</span></a
+        >
+
+        <a href="{% url 'pricing' %}" class="btn btn-warning"
+          ><span class="txt">Pricing</span></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-------HERO SECTION-->
+{% endblock banner %}
+<!---->
+{% block content %}
+<!--====ABout Section===-->
+<section class="section about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="image-box">
+          <img src="/assets/images/about2.jpg" alt="ABOUT US" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-section-container">
+          <h6 class="title">WHO ARE WE</h6>
+          <h3>Working Together To Deliver Growth To Your Investments.</h3>
+          <p>
+            We bring the right people together to challenge established thinking
+            and drive transformation. We work with our clients to build the
+            capabilities that enable organizations to achieve sustainable
+            advantage.
+          </p>
+          <a href="#" class="btn btn-primary"
+            ><span class="txt">Read more</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====ABout Section===-->
+
+<!--====How It Wors Section===-->
+<section class="section gray hts-section">
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head">How To<span> become </span> an investor</h2>
+        <div class="title-head-subtitle">
+          <p class="text-muted">get started immediately</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-4 col-10 hts-box wow fadeInUp">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="hts-box-icon">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3>Register</h3>
+            <p>
+              Sign up for an account , confirm your email address to login and
+              update your profile.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-10 hts-box wow fadeInDown">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="hts-box-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3>Fund Account</h3>
+            <p>Fund Your Account With cryptocurrency.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-10 hts-box wow fadeInUp">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="hts-box-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3>Invest To A Plan</h3>
+            <p>Choose a plan that best suite you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====How It Wors Section===-->
+<!--====  Section1===-->
+<section class="section section1">
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head">Our<span> Feature </span></h2>
+        <div class="title-head-subtitle">
+          <p class="text-muted">
+            We will utilize your money providing a source of high income while
+            minimizing the any possibility of risk in a very secure way.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+    <div class="row clearfix">
+      <!-- Service Block Two -->
+      <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+        <div
+          class="inner-box wow fadeInLeft animated"
+          data-wow-delay="0ms"
+          data-wow-duration="1500ms"
+          style="
+            visibility: visible;
+            animation-duration: 1500ms;
+            animation-delay: 0ms;
+            animation-name: fadeInLeft;
+          "
+        >
+          <div class="border-one"></div>
+          <div class="border-two"></div>
+          <div class="icon-box">
+            <span class="icon fas fa-phone"></span>
+          </div>
+          <h4>24/7 Support</h4>
+          <div class="text">
+            Our customer service unit is always available 24/7 to attend to your
+            needs/querries.
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Block Two -->
+      <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+        <div
+          class="inner-box wow fadeInUp animated"
+          data-wow-delay="0ms"
+          data-wow-duration="1500ms"
+          style="
+            visibility: visible;
+            animation-duration: 1500ms;
+            animation-delay: 0ms;
+            animation-name: fadeInUp;
+          "
+        >
+          <div class="border-one"></div>
+          <div class="border-two"></div>
+          <div class="icon-box">
+            <span class="icon fas fa-edit"></span>
+          </div>
+          <h4>FAST PAYOUT</h4>
+          <div class="text">
+            You will receive your promised ROI at the end of your investment.
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Block Two -->
+      <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
+        <div
+          class="inner-box wow fadeInRight animated"
+          data-wow-delay="0ms"
+          data-wow-duration="1500ms"
+          style="
+            visibility: visible;
+            animation-duration: 1500ms;
+            animation-delay: 0ms;
+            animation-name: fadeInRight;
+          "
+        >
+          <div class="border-one"></div>
+          <div class="border-two"></div>
+          <div class="icon-box">
+            <span class="icon fas fa-suitcase"></span>
+          </div>
+          <h4>INSTANT TRADING</h4>
+          <div class="text">
+            Create an account with our platform, make a deposit and start
+            trading immediately.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====  Section1===-->
+
+<!--====  Static===-->
+<section
+  class="section onlinestat-section bg-overlay-primary set-bg"
+  data-bg="/assets/images/in-slideshow-image-3.jpg"
+>
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head" style="color: white">
+          Online <span>Stats </span>
+        </h2>
+        <div class="title-head-subtitle">
+          <p class="text-muted"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+    <div class="row mt-4">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-4">
+            <div class="stat-item">
+              <h3>$2458402 <span>+</span></h3>
+              <hr />
+              <p>DEPOSITS</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="stat-item">
+              <h3>$3492057<span>+</span></h3>
+              <hr />
+              <p>withdraw</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="stat-item">
+              <h3>369K <span>+</span></h3>
+              <hr />
+              <p>accounts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--====  Static===-->
+
+<!-- services section  end-->
+<section class="section services-section">
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head"><span>Services </span></h2>
+        <div class="title-head-subtitle">
+          <p class="text-muted">
+            We are consistently rated the best and most secure cryptocurrency
+            trading platform.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+    <div class="row clearfix">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="feature p-3 py-5 rounded text-left">
+              <i class="fas h1 text-primary"></i>
+              <div class="content">
+                <h4 class="title mt-3">Client-Centered</h4>
+                <p class="text-muted mt-2 mb-0">
+                  At our firm, the client always comes first. We are in this
+                  business to serve others and make a positive impact on their
+                  lives. With a passion for helping people, we enjoy building
+                  lifelong relationships with our clients and guiding them along
+                  their financial path.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="feature second p-3 py-5 mt-4 rounded text-left">
+              <i class="fas h1 text-primary"></i>
+              <div class="content">
+                <h4 class="title mt-3">Independent</h4>
+                <p class="text-muted mt-2 mb-0">
+                  As an independent firm, we are not confined to proprietary
+                  products or sales quotas. Rather than focus on selling
+                  products, we are more concerned with building relationships
+                  and creating thorough and comprehensive financial strategies
+                  that address your short and long-term goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="feature p-3 py-5 mt-4 rounded text-left">
+              <i class="h1 text-primary"></i>
+              <div class="content">
+                <h4 class="title mt-3">Advanced Technology</h4>
+                <p class="text-muted mt-2 mb-0">
+                  We utilize advanced, This tool provides us with the ability to
+                  show you real-time financial planning and interactive
+                  scenarios of various financial outcomes, depending on how you
+                  choose to invest or what goals you want to achieve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="space-top"></div>
+
+        <p class="medium-paragraph mt-5">
+          ALTEGRIS is a dual-purpose platform made up of subsidiaries that
+          provide an opportunity to utilize ALTEGRIS Virtual mining technique,
+          which is intended for evaluating mining revenue and as well as
+          conversion of ALTEGRIS units to real word money and cash out as at
+          when due.
+        </p>
+        <div class="about-item-area ml-b-30">
+          <div class="about-item d-flex flex-wrap align-items-center mrb-30">
+            <div class="about-icon">
+              <i class="las la-database"></i>
+            </div>
+            <div class="about-details">
+              <h3 class="title">Performance</h3>
+              <p>Ultimate performance at low cost</p>
+            </div>
+          </div>
+          <div class="about-item d-flex flex-wrap align-items-center mrb-30">
+            <div class="about-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="about-details">
+              <h3 class="title">World Wide Mining</h3>
+              <p>Servicing thousands of users from many countries</p>
+            </div>
+          </div>
+          <div class="about-item d-flex flex-wrap align-items-center mrb-30">
+            <div class="about-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <div class="about-details">
+              <h3 class="title">Multiple Cryptocurrencies</h3>
+              <p>We are offering mining for the next generation coin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- services section  end-->
+
+<!-- pricing section  -->
+<section class="pricing section">
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head">Investment <span>Plan</span></h2>
+        <div class="title-head-subtitle">
+          <p>Choose a plan that best suite you</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-10">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="title">Stable</h3>
+          </div>
+          <ul class="pricing-content unstyled">
+            <li><i class="fa fa-check-circle"></i>Min Amount : $30</li>
+            <li><i class="fa fa-check-circle"></i>Max Amount : $2499</li>
+            <li><i class="fa fa-check-circle"></i> 15% After 1 Day</li>
+            <li><i class="fa fa-check-circle"></i>Referral Comission 10%</li>
+            <!--<li><i class="fa fa-check-circle"></i>Daily Signals</li>-->
+          </ul>
+          <a class="btn btn-primary btn-block" href="indexcca3.html?a=signup"
+            >Signup</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-3 col-10">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="title">Aggressive</h3>
+          </div>
+          <ul class="pricing-content unstyled">
+            <li><i class="fa fa-check-circle"></i>Min Amount : $2500</li>
+            <li><i class="fa fa-check-circle"></i>Max Amount : $9999</li>
+            <li><i class="fa fa-check-circle"></i> 35% After 2 Days</li>
+            <li><i class="fa fa-check-circle"></i>Referral Comission 10%</li>
+            <!--<li><i class="fa fa-check-circle"></i>Daily Signals</li>-->
+          </ul>
+          <a class="btn btn-primary btn-block" href="indexcca3.html?a=signup"
+            >Signup</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-3 col-10">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="title">Conservative</h3>
+          </div>
+          <ul class="pricing-content unstyled">
+            <li><i class="fa fa-check-circle"></i>Min Amount : $10000</li>
+            <li><i class="fa fa-check-circle"></i>Max Amount : $29999</li>
+            <li><i class="fa fa-check-circle"></i> 80% After 3 Days</li>
+            <li><i class="fa fa-check-circle"></i>Referral Comission 10%</li>
+            <!--<li><i class="fa fa-check-circle"></i>Daily Signals</li>-->
+          </ul>
+          <a class="btn btn-primary btn-block" href="indexcca3.html?a=signup"
+            >Signup</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-10">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="title">Ultimate</h3>
+          </div>
+          <ul class="pricing-content unstyled">
+            <li><i class="fa fa-check-circle"></i>Min Amount : $30000</li>
+            <li><i class="fa fa-check-circle"></i>Max Amount : Unlimited</li>
+            <li><i class="fa fa-check-circle"></i> 120% After 1 month</li>
+            <li><i class="fa fa-check-circle"></i>Referral Comission 10%</li>
+            <!--<li><i class="fa fa-check-circle"></i>Daily Signals</li>-->
+          </ul>
+          <a class="btn btn-primary btn-block" href="indexcca3.html?a=signup"
+            >Signup</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- pricing section  end-->
+
+<!-- testimony section  -->
+<section
+  class="setion set-bg testimony-section"
+  data-bg="/assets/images/in-slideshow-image-3.jpg"
+>
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head mt-5">What <span>Client </span>Say</h2>
+        <div class="title-head-subtitle">
+          <p class="text-muted">Testimonies.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="/assets/images/photo-1572561300743-2dd367ed0c9a60b0.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Ronne Galle <br />
+                  <span> Investor </span>
+                </h5>
+                <p class="card-text">
+                  � Just when I think its good enough, its just keeps getting
+                  better. Made over 4 withdrawals and I must confess that this
+                  is the best service i've ever recieved. �
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="/assets/images/photo-1588361035994-295e21daa7616502.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Missy Limana<br />
+                  <span> Investor </span>
+                </h5>
+                <p class="card-text">
+                  � This is the real definition of being top notch. I literally
+                  watched my account blossom into what it is today and I believe
+                  there is more to come. �
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="/assets/images/photo-1575377222312-dd1a63a516385210.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Martha Brown<br />
+                  <span> Investor </span>
+                </h5>
+                <p class="card-text">
+                  � Very easy to use - Trades &amp; withdrawals are instant
+                  (fast) - Lots of coins to choose from - Bottom line - it is an
+                  OK service but great for beginners and non-tech savvy people �
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="/assets/images/photo-1549836938-d278c5d46d2024b7.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Hanna Lisem<br />
+                  <span> Investor </span>
+                </h5>
+                <p class="card-text">
+                  � I really did not think it was possible before now to make so
+                  much profit, but here I am right now saying "Anything is just
+                  possible with ALTEGRIS �
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimony section  end-->
+
+<!-- expert section  -->
+<section class="section expert-section">
+  <div class="container">
+    <!-- Section Title Starts -->
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-10">
+        <h2 class="title-head">Our <span>Expert</span></h2>
+        <div class="title-head-subtitle">
+          <p>A TALENTED TEAM OF CRYPTOCURRENCY EXPERTS BASED IN LONDON</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Title Ends -->
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-3 col-10">
+        <div class="team-member">
+          <!-- Team Member Picture Starts -->
+          <img
+            src="assets/images/ceo.jpg"
+            class="img-responsive"
+            alt="team member"
+          />
+          <!-- Team Member Picture Ends -->
+          <!-- Team Member Details Starts -->
+          <div class="team-member-caption social-icons">
+            <h4>Lina Marzouki</h4>
+            <p>Ceo Founder</p>
+          </div>
+          <!-- Team Member Details Ends -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-10">
+        <div class="team-member">
+          <!-- Team Member Picture Starts -->
+          <img
+            src="assets/images/member2.jpg"
+            class="img-responsive"
+            alt="team member"
+          />
+          <!-- Team Member Picture Ends -->
+          <!-- Team Member Details Starts -->
+          <div class="team-member-caption social-icons">
+            <h4>Marco Verratti</h4>
+            <p>Director</p>
+          </div>
+          <!-- Team Member Details Ends -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-10">
+        <div class="team-member">
+          <!-- Team Member Picture Starts -->
+          <img
+            src="assets/images/member3.jpg"
+            class="img-responsive"
+            alt="team member"
+          />
+          <!-- Team Member Picture Ends -->
+          <!-- Team Member Details Starts -->
+          <div class="team-member-caption social-icons">
+            <h4>Emilia Bella</h4>
+            <p>Bitcoin Consultant</p>
+          </div>
+          <!-- Team Member Details Ends -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-10">
+        <div class="team-member">
+          <!-- Team Member Picture Starts -->
+          <img
+            src="assets/images/member4.jpg"
+            class="img-responsive"
+            alt="team member"
+          />
+          <!-- Team Member Picture Ends -->
+          <!-- Team Member Details Starts -->
+          <div class="team-member-caption social-icons">
+            <h4>Antonio Conte</h4>
+            <p>Bitcoin Developer</p>
+          </div>
+          <!-- Team Member Details Ends -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- expert section  end-->
+
+{% endblock content %}

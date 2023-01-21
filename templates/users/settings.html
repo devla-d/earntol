@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/users/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/application.css" />
+    <link rel="stylesheet" href="/assets/users/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+  </head>
+  <body id="dashboard">
+    <header>
+      <div id="headerBn">
+        <div>
+          <h3>Hi, welcome back !</h3>
+        </div>
+      </div>
+    </header>
+
+    <div id="dwrapper">
+      <!----[left panel]-->
+      <div class="left-panel" id="dsidebar">
+        <div class="left-panel-menu">
+          <ul>
+            <li>
+              <a href="{% url 'dashboard' %}"
+                ><i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashbaord</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="{% url 'withdrawal' %}">
+                <i class="far fa-fw fa-credit-card"></i>
+                <span>Withdraw</span></a
+              >
+            </li>
+            <li>
+              <a href="{% url 'transactions_' %}">
+                <i class="fas fa-fw fa-history"></i>
+                <span>Transactions</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/#referrals" id="open-ref">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Referrals</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'settings_' %}">
+                <i class="fas fa-fw fa-cog fa-"></i> <span>Settings</span></a
+              >
+            </li>
+            <li>
+              <a href="{% url 'sign_out' %}">
+                <i class="fas fa-fw fa-sign-out-alt"></i><span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!----[left panel ends]-->
+      <!---->
+      <div class="right-panel d-flex flex-column">
+        <div class="container-fluid">
+          <!---content-->
+          <div
+            class="d-sm-flex align-items-center justify-content-between mb-4"
+          >
+            <h1 class="h3 mb-0 text-gray-800">Settings</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Settings
+              </li>
+            </ol>
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10 col-10">
+              <ul
+                class="nav nav-tabs justify-content-center"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="#settings"
+                    aria-controls="settings"
+                    >Profile Settings</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn btn-primary ml-2 mb-2"
+                    href="/change-password/"
+                    >Security</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="settings"
+                  role="tabpanel"
+                  aria-labelledby="setting-tab"
+                >
+                  <div class="form mt-3 mb-3">
+                    <form
+                      action=""
+                      method="post"
+                      class="mt-5 mb-5"
+                      id="profileform"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="XD0uRPHJybfsdHOh5HbDmnZauMcRNoDThJ1aY2yqRvZ12OoO6kLf6PF8rD0mxLS3"
+                      />
+                      <div class="row">
+                        <div class="form-group col-md-4 mt-3">
+                          <div id="div_id_country" class="form-group">
+                            <label for="id_country" class="requiredField">
+                              Country<span class="asteriskField">*</span>
+                            </label>
+
+                            <div>
+                              <input
+                                type="text"
+                                name="country"
+                                class="input-form textinput textInput form-control"
+                                placeholder="Country"
+                                maxlength="30"
+                                required=""
+                                id="id_country"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4 mt-3">
+                          <div id="div_id_city" class="form-group">
+                            <label for="id_city" class="requiredField">
+                              City<span class="asteriskField">*</span>
+                            </label>
+
+                            <div>
+                              <input
+                                type="text"
+                                name="city"
+                                class="input-form textinput textInput form-control"
+                                placeholder="City"
+                                maxlength="30"
+                                required=""
+                                id="id_city"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4 mt-3">
+                          <div id="div_id_phone" class="form-group">
+                            <label for="id_phone" class="requiredField">
+                              Phone Number<span class="asteriskField">*</span>
+                            </label>
+
+                            <div>
+                              <input
+                                type="tel"
+                                name="phone"
+                                class="input-form textinput textInput form-control"
+                                placeholder="Phone Number"
+                                maxlength="30"
+                                required=""
+                                id="id_phone"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <div id="div_id_address" class="form-group">
+                          <label for="id_address" class="requiredField">
+                            Address<span class="asteriskField">*</span>
+                          </label>
+
+                          <div>
+                            <input
+                              type="text"
+                              name="address"
+                              class="input-form textinput textInput form-control"
+                              placeholder="ADDRESS"
+                              maxlength="30"
+                              required=""
+                              id="id_address"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-4 mt-3">
+                          <div id="div_id_zipcode" class="form-group">
+                            <label for="id_zipcode" class="requiredField">
+                              Zipcode<span class="asteriskField">*</span>
+                            </label>
+
+                            <div>
+                              <input
+                                type="text"
+                                name="zipcode"
+                                class="input-form textinput textInput form-control"
+                                placeholder="zipcode"
+                                maxlength="30"
+                                required=""
+                                id="id_zipcode"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4 mt-3">
+                          <div id="div_id_date_of_birth" class="form-group">
+                            <label for="id_date_of_birth" class="requiredField">
+                              Date Of Birth<span class="asteriskField">*</span>
+                            </label>
+
+                            <div>
+                              <input
+                                type="text"
+                                name="date_of_birth"
+                                class="input-form textinput textInput form-control"
+                                required=""
+                                id="id_date_of_birth"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-4 mt-3">
+                          <div id="div_id_gender" class="form-group">
+                            <label for="id_gender" class="requiredField">
+                              Gender<span class="asteriskField">*</span>
+                            </label>
+
+                            <div>
+                              <select
+                                name="gender"
+                                class="input-form select form-control"
+                                id="id_gender"
+                              >
+                                <option value="MALE">Male</option>
+
+                                <option value="FEMALE">Female</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group mt-3 col-lg-6">
+                        <input
+                          type="submit"
+                          name="submit"
+                          id="submit_btn"
+                          class="btn btn-primary btn-block"
+                          value="UpdateProfile"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="change_password"
+                  role="tabpanel"
+                  aria-labelledby="change_password-tab"
+                >
+                  <div class="row justify-content-center mt-4">
+                    <div class="col-lg-6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!---content-->
+        </div>
+      </div>
+      <div class="dashboard-footer">
+        <p class="text-center">{{domain}}</p>
+      </div>
+      <!---->
+    </div>
+    <div class="toggle-menu">
+      <span><i class="fas fa-bars" id="togglebar"></i></span>
+    </div>
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/users/js/scripts.js"></script>
+  </body>
+</html>
