@@ -1,168 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/users/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/application.css" />
-    <link rel="stylesheet" href="/assets/users/css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
-  </head>
-  <body id="dashboard">
-    <header>
-      <div id="headerBn">
+{% extends "layouts/users.html" %}<!---->
+{% block title %}Account Dashboard {% endblock title %}<!---->
+{% block content %}
+<div class="container">
+  <div class="user-statistic">
+    <div class="user-statistic__item">
+      <div class="user-statistic__card">
+        <div class="user-statistic__icon st1--icon"></div>
+        <div class="user-statistic__value">
+          <span> $<b>10000</b> </span>
+        </div>
+        <div class="user-statistic__title">Total Balance</div>
+      </div>
+    </div>
+    <div class="user-statistic__item">
+      <div class="user-statistic__card">
+        <div class="user-statistic__icon st2--icon"></div>
+        <div class="user-statistic__value" id="load1">
+          <span> $<b>0.00</b> </span>
+        </div>
+        <div class="user-statistic__title">deposits Balance</div>
+      </div>
+    </div>
+    <div class="user-statistic__item">
+      <div class="user-statistic__card">
+        <div class="user-statistic__icon st3--icon"></div>
+        <div class="user-statistic__value" id="load2">
+          <span> $<b>0.00</b> </span>
+        </div>
+        <div class="user-statistic__title">Vip bonus</div>
+      </div>
+    </div>
+    <div class="user-statistic__item">
+      <div class="user-statistic__card">
+        <div class="user-statistic__icon st4--icon"></div>
+        <div class="user-statistic__value" id="load3">
+          <span> $<b>200</b> </span>
+        </div>
+        <div class="user-statistic__title">Total withdrawn</div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-4">
+      <div class="auth-info-card card mb-5">
         <div>
-          <h3>Hi, welcome back !</h3>
-        </div>
-      </div>
-    </header>
-
-    <div id="dwrapper">
-      <!----[left panel]-->
-      <div class="left-panel" id="dsidebar">
-        <div class="left-panel-menu">
-          <ul>
-            <li>
-              <a href="{% url 'dashboard' %}"
-                ><i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashbaord</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="{% url 'withdrawal' %}">
-                <i class="far fa-fw fa-credit-card"></i>
-                <span>Withdraw</span></a
-              >
-            </li>
-            <li>
-              <a href="{% url 'transactions_' %}">
-                <i class="fas fa-fw fa-history"></i>
-                <span>Transactions</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="/#referrals" id="open-ref">
-                <i class="fas fa-fw fa-users"></i>
-                <span>Referrals</span>
-              </a>
-            </li>
-            <li>
-              <a href="{% url 'settings_' %}">
-                <i class="fas fa-fw fa-cog fa-"></i> <span>Settings</span></a
-              >
-            </li>
-            <li>
-              <a href="{% url 'sign_out' %}">
-                <i class="fas fa-fw fa-sign-out-alt"></i><span>Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!----[left panel ends]-->
-      <!---->
-      <div class="right-panel d-flex flex-column">
-        <div class="container">
-          <div class="user-statistic">
-            <div class="user-statistic__item">
-              <div class="user-statistic__card">
-                <div class="user-statistic__icon st1--icon"></div>
-                <div class="user-statistic__value">
-                  <span> $<b>10000</b> </span>
-                </div>
-                <div class="user-statistic__title">Total Balance</div>
-              </div>
-            </div>
-            <div class="user-statistic__item">
-              <div class="user-statistic__card">
-                <div class="user-statistic__icon st2--icon"></div>
-                <div class="user-statistic__value" id="load1">
-                  <span> $<b>0.00</b> </span>
-                </div>
-                <div class="user-statistic__title">deposits Balance</div>
-              </div>
-            </div>
-            <div class="user-statistic__item">
-              <div class="user-statistic__card">
-                <div class="user-statistic__icon st3--icon"></div>
-                <div class="user-statistic__value" id="load2">
-                  <span> $<b>0.00</b> </span>
-                </div>
-                <div class="user-statistic__title">Vip bonus</div>
-              </div>
-            </div>
-            <div class="user-statistic__item">
-              <div class="user-statistic__card">
-                <div class="user-statistic__icon st4--icon"></div>
-                <div class="user-statistic__value" id="load3">
-                  <span> $<b>200</b> </span>
-                </div>
-                <div class="user-statistic__title">Total withdrawn</div>
-              </div>
-            </div>
+          <div class="auth-info-card-header">
+            <h4 class="text-white">Activities</h4>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-4">
-              <div class="auth-info-card card mb-5">
-                <div>
-                  <div class="auth-info-card-header">
-                    <h4 class="text-white">Activities</h4>
-                  </div>
-                  <div class="auth-info-card-body">
-                    {% for log in logs %}
-                    <div class="auth-info-item">
-                      <div
-                        class="d-flex"
-                        style="
-                          align-items: center;
-                          justify-content: space-between;
-                        "
-                      >
-                        <h5 class="text-white">Web</h5>
+          <div class="auth-info-card-body">
+            {% for log in logs %}
+            <div class="auth-info-item">
+              <div
+                class="d-flex"
+                style="align-items: center; justify-content: space-between"
+              >
+                <h5 class="text-white">Web</h5>
 
-                        <div style="margin-top: -11px">
-                          <!-- <h5 class="text-gray-500">{{log.city}}</h5> -->
-                          <p
-                            class="ml-auto text-success"
-                            style="margin: 10px 0"
-                          >
-                            {{log.log_ip}}
-                          </p>
-                          <p
-                            class="ml-auto text-gray-500"
-                            style="margin: 10px 0"
-                          >
-                            {{log.date}}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    {% endfor %}
-                  </div>
+                <div style="margin-top: -11px">
+                  <!-- <h5 class="text-gray-500">{{log.city}}</h5> -->
+                  <p class="ml-auto text-success" style="margin: 10px 0">
+                    {{log.log_ip}}
+                  </p>
+                  <p class="ml-auto text-gray-500" style="margin: 10px 0">
+                    {{log.date}}
+                  </p>
                 </div>
               </div>
             </div>
+            {% endfor %}
           </div>
         </div>
       </div>
-      <div class="dashboard-footer">
-        <p class="text-center">capi</p>
-      </div>
-      <!---->
     </div>
-    <div class="toggle-menu">
-      <span><i class="fas fa-bars" id="togglebar"></i></span>
-    </div>
-
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/users/js/scripts.js"></script>
-  </body>
-</html>
+  </div>
+</div>
+{% endblock content %}
