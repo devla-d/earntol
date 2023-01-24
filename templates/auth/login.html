@@ -1,4 +1,4 @@
-{% extends "layouts/home.html" %}<!---->
+{% extends "layouts/home.html" %}{% load crispy_forms_tags %}<!---->
 {% block title %}Login into your Account {% endblock title %} {% block banner %}
 
 <!-------HERO SECTION-->
@@ -22,31 +22,18 @@
     <!-- Section Title Ends -->
     <div class="row justify-content-center align-item-center">
       <div class="col-lg-8">
-        <form action="">
+        <form action="" method="post">
+          {% csrf_token %}
           <div class="form-row justify-content-center">
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="Email"
-                type="text"
-                required=""
-              />
+              {{ form.email|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
 
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="password"
-                id="password"
-                placeholder="Password"
-                type="text"
-                required=""
-              />
+              {{ form.password|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
 

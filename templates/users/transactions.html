@@ -20,21 +20,21 @@
           <div class="t-head"><b>Date</b></div>
         </div>
         <div class="transac-table-boby">
-          <!-- {% if transactions %} {% for obj in transactions %}
-                  <div class="t-row">
-                    <div class="t-cell"><span>{{obj.trans_type}}</span></div>
-                    <div class="t-cell"><span>${{obj.amount}}</span></div>
-                    <div class="t-cell">
-                      <span>{{obj.date|date:"Y:m:d g:iA"}}</span>
-                    </div>
-                  </div>
-                  {% endfor %} {% else %} -->
+          {% if transactions %} {% for obj in transactions %}
+          <div class="t-row">
+            <div class="t-cell"><span>{{obj.trans_type}}</span></div>
+            <div class="t-cell"><span>${{obj.amount}}</span></div>
+            <div class="t-cell">
+              <span>{{obj.date|date:"Y:m:d g:iA"}}</span>
+            </div>
+          </div>
+          {% endfor %} {% else %}
           <div class="t-row">
             <div class="t-cell" align="center">
               <span>No Transactions</span>
             </div>
           </div>
-          <!-- {% endif %} -->
+          {% endif %}
         </div>
       </div>
 

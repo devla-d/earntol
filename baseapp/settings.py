@@ -70,6 +70,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "users.context_processor.dashboard_processor",
             ],
         },
     },
@@ -130,10 +131,11 @@ STATICFILES_DIRS = ((os.path.join(BASE_DIR, "assets")),)
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-LOGIN_URL = "login"
+LOGIN_URL = "sign_in"
 LOGIN_REDIRECT_URL = "dashboard"
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+AUTH_USER_MODEL = "account.Account"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 

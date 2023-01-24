@@ -29,9 +29,15 @@
     <link rel="stylesheet" href="/assets/css/animate.css" />
     <link rel="stylesheet" href="/assets/css/application.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/toastr.min.css" />
+
+    {% block style %} {% endblock style %}
   </head>
 
   <body>
+    {% if messages %} {% for msg in messages %}
+    <div style="display: none" class="messages" data-msg="{{ msg }}"></div>
+    {% endfor %} {% endif %}
     <main class="wrapper">
       <!--[sidebar]-->
       <nav class="sidebar homepage">
@@ -268,5 +274,11 @@
     <script src="/assets/js/wow.js"></script>
     <script src="/assets/js/owl.carousel.js"></script>
     <script src="/assets/js/application.js"></script>
+    <script src="/assets/js/toastr.min.js"></script>
+    {% if messages %}
+    <script src="/assets/js/toastr-init.js"></script>
+    {% endif %}
+    <script src="/assets/js/circle-progress.min.js"></script>
+    <script src="/assets/js/circle-progress-init.js"></script>
   </body>
 </html>

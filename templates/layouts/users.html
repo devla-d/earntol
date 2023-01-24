@@ -12,8 +12,12 @@
       rel="stylesheet"
       href="/assets/vendor/bootstrap/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="/assets/css/toastr.min.css" />
   </head>
   <body id="dashboard">
+    {% if messages %} {% for msg in messages %}
+    <div style="display: none" class="messages" data-msg="{{ msg }}"></div>
+    {% endfor %} {% endif %}
     <header>
       <div id="headerBn">
         <div>
@@ -53,7 +57,7 @@
               >
             </li>
             <li>
-              <a href="#">
+              <a href="{% url 'sign_out' %}">
                 <i class="fas fa-fw fa-sign-out-alt"></i><span>Logout</span>
               </a>
             </li>
@@ -77,5 +81,11 @@
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/users/js/scripts.js"></script>
+    <script src="/assets/js/toastr.min.js"></script>
+    {% if messages %}
+    <script src="/assets/js/toastr-init.js"></script>
+    {% endif %}
+    <script src="/assets/js/circle-progress.min.js"></script>
+    <script src="/assets/js/circle-progress-init.js"></script>
   </body>
 </html>

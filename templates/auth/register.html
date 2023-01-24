@@ -1,11 +1,23 @@
-{% extends "layouts/home.html" %}<!---->
-{% block title %}Create an Account {% endblock title %} {% block banner %}
+{% extends "layouts/home.html" %} {% load crispy_forms_tags %}
+<!---->
+{% block title %}Create an Account {% endblock title %}
+<!---->
+{% block style %}
+<style>
+  label {
+    display: none !important;
+  }
+</style>
+{% endblock style %}
+<!---->
+{% block banner %}
 
 <!-------HERO SECTION-->
 {% include "components/banner.html" with name="Sign up" %}
 <!-------HERO SECTION-->
 {% endblock banner %}
 <!---->
+
 {% block content %}
 
 <section class="section pricing pricingpage">
@@ -22,78 +34,37 @@
     <!-- Section Title Ends -->
     <div class="row justify-content-center align-item-center">
       <div class="col-lg-8">
-        <form action="">
+        <form action="" method="post">
+          {% csrf_token %}
           <div class="form-row justify-content-center">
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="Fullname"
-                id="fullname"
-                placeholder="Full name"
-                type="text"
-                required=""
-              />
+              {{ form.fullname|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="username"
-                id="username"
-                placeholder="Username"
-                type="text"
-                required=""
-              />
+              {{ form.username|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="Email"
-                type="text"
-                required=""
-              />
+              {{ form.email|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-                type="text"
-                required=""
-              />
+              {{ form.phone|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="password"
-                id="password"
-                placeholder="Password"
-                type="text"
-                required=""
-              />
+              {{ form.password1|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->
             <div class="form-group col-xl-6">
-              <input
-                class="form-control"
-                name="password2"
-                id="password2"
-                placeholder="Confirm Password"
-                type="text"
-                required=""
-              />
+              {{ form.password2|as_crispy_field}}
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->

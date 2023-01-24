@@ -7,7 +7,7 @@
       <div class="user-statistic__card">
         <div class="user-statistic__icon st1--icon"></div>
         <div class="user-statistic__value">
-          <span> $<b>10000</b> </span>
+          <span> $<b>{{user.balance}}</b> </span>
         </div>
         <div class="user-statistic__title">Total Balance</div>
       </div>
@@ -16,7 +16,7 @@
       <div class="user-statistic__card">
         <div class="user-statistic__icon st2--icon"></div>
         <div class="user-statistic__value" id="load1">
-          <span> $<b>0.00</b> </span>
+          <span> $<b>{{user.deposit_balance}}</b> </span>
         </div>
         <div class="user-statistic__title">deposits Balance</div>
       </div>
@@ -34,12 +34,13 @@
       <div class="user-statistic__card">
         <div class="user-statistic__icon st4--icon"></div>
         <div class="user-statistic__value" id="load3">
-          <span> $<b>200</b> </span>
+          <span> $<b>{{user.total_withdraw}}</b> </span>
         </div>
         <div class="user-statistic__title">Total withdrawn</div>
       </div>
     </div>
   </div>
+
   <div class="row justify-content-center">
     <div class="col-lg-4">
       <div class="auth-info-card card mb-5">
