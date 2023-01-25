@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "home",
     "users",
     "account",
+    "superuser",
 ]
 
 MIDDLEWARE = [
