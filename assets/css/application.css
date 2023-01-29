@@ -165,7 +165,7 @@ hr {
     background-image: -ms-linear-gradient(top, #c99c3b 0%, #c99c3b 100%);
     background-image: -moz-linear-gradient(top, #c99c3b 0%, #c99c3b 100%);
     background-image: -o-linear-gradient(top, #c99c3b 0%, #c99c3b 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c5ab31), color-stop(100, #c5ab31));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eb2617), color-stop(100, #eb2617));
     background-image: -webkit-linear-gradient(top, #c99c3b 0%, #c99c3b 100%);
     background-image: linear-gradient(to bottom, #c99c3b 0%, #c99c3b 100%);
     font-family: 'Poppins', sans-serif;
@@ -189,7 +189,7 @@ hr {
     background-image: -ms-linear-gradient(top, #D1641A 0%, #c99c3b 100%);
     background-image: -moz-linear-gradient(top, #D1641A 0%, #c99c3b 100%);
     background-image: -o-linear-gradient(top, #D1641A 0%, #c99c3b 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D1641A), color-stop(100, #c5ab31));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D1641A), color-stop(100, #eb2617));
     background-image: -webkit-linear-gradient(top, #D1641A 0%, #c99c3b 100%);
     background-image: linear-gradient(to bottom, #D1641A 0%, #c99c3b 100%);
 }
@@ -266,7 +266,7 @@ hr {
     right: -50px;
     top: 13px;
     width: 30px;
-    background: #c5ab31;
+    background: #eb2617;
 }
 
 .title-head-subtitle p:after {
@@ -276,7 +276,7 @@ hr {
     left: -50px;
     top: 13px;
     width: 30px;
-    background: #c5ab31;
+    background: #eb2617;
 }
 
 
@@ -302,7 +302,7 @@ hr {
     left: 0px;
     top: 0px;
     font-weight: 400;
-    color: #c5ab31;
+    color: #eb2617;
     font-size: 16px;
     font-family: 'FontAwesome';
 }
@@ -445,7 +445,7 @@ topbar
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(129, 111, 8);
+    background-color: #eb2617;
     ;
 }
 
@@ -615,9 +615,9 @@ How To start
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    border: 1px solid #c5ab31;
+    border: 1px solid #eb2617;
     font-size: 40px;
-    color: #c5ab31;
+    color: #eb2617;
     line-height: 78px;
     text-align: center;
     border-radius: 50%;
@@ -849,12 +849,12 @@ How To start
 }
 
 .service-block-two.style-two .inner-box .icon-box .icon {
-    color: #c5ab31;
+    color: #eb2617;
     -webkit-text-fill-color: inherit;
 }
 
 .service-block-two.style-two .inner-box:hover {
-    border-color: #c5ab31;
+    border-color: #eb2617;
 }
 
 .inner-box .icon-box .icon {
@@ -982,13 +982,13 @@ Services
 
 .about-item-area .about-item .about-details .title {
     font-weight: 500;
-    color: #c5ab31;
+    color: #eb2617;
     margin-bottom: 0;
     font-size: 22px;
 }
 
 .feature {
-    background: #c5ab31;
+    background: #eb2617;
     border-radius: 0 !important;
 }
 
@@ -1038,7 +1038,7 @@ Services
 }
 
 .pricing-card ul li i {
-    color: #c5ab31;
+    color: #eb2617;
     font-size: 25px;
     margin-right: 18px;
 }
@@ -1183,7 +1183,7 @@ Testimony
 
 .team-member-caption {
     text-align: center;
-    background: #c5ab31;
+    background: #eb2617;
     -webkit-transition: .1s all ease;
     transition: .1s all ease;
 }
@@ -1203,7 +1203,7 @@ Testimony
 /*================================================== */
 
 .widget {
-    background: #c5ab31;
+    background: #eb2617;
     padding: 30px;
     margin-bottom: 30px;
 }
@@ -1359,7 +1359,7 @@ section.contact {
     margin-top: 0;
     font-size: 16px;
     margin-bottom: 15px;
-    color: #c5ab31;
+    color: #eb2617;
 }
 
 
@@ -1470,7 +1470,7 @@ section.contact {
     font-size: 23px;
     font-weight: 800;
     margin: 15px 0 0;
-    color: #c5ab31;
+    color: #eb2617;
 }
 
 .facts-footer>div span {
