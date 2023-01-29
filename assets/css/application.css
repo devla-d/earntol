@@ -28,6 +28,13 @@ body {
     color: #869ab8;
     text-align: left;
     /* background-color: #201d1d; */
+
+
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-image: url(../users/images/bg_main.png);
+    background-size: cover;
+    z-index: 2;
 }
 
 body.authpage {
