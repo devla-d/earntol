@@ -46,20 +46,26 @@
     background-image: url(../../images/in-slideshow-image-3.jpg);
     background-position: center;
     background-size: cover;
-    display: inline-table;
+    display: flex;
     height: 150px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 #headerBn > div{
     text-align: center;
+    width: 210px;
+    
+    overflow: hidden;
+
 }
 
 #headerBn > div >h3{
     text-transform: capitalize;
     color: #fff;
     font-size: 30px;
-    margin-top: 42px;
+    margin-top: 0px;
 }
 
 #dwrapper{

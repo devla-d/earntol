@@ -51,6 +51,7 @@ class UserAdmin(BaseUserAdmin):
                     "balance",
                     "deposit_balance",
                     "total_withdraw",
+                    "vip_reward",
                 )
             },
         ),

@@ -19,6 +19,7 @@ class Account(AbstractUser):
     phone = models.CharField(max_length=30, blank=True, null=True, unique=True)
     balance = models.IntegerField(default=0, blank=True, null=True)
     deposit_balance = models.IntegerField(default=0, blank=True, null=True)
+    vip_reward = models.IntegerField(default=0, blank=True, null=True)
 
     total_withdraw = models.IntegerField(default=0, blank=True, null=True)
 
