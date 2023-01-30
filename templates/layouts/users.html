@@ -21,7 +21,7 @@
     <header>
       <div id="headerBn">
         <div>
-          <h3>Hi, welcome back !</h3>
+          <h3 class="text-truncate">Hi, {{user.username}}!</h3>
         </div>
       </div>
     </header>
@@ -69,11 +69,142 @@
       <div class="right-panel d-flex flex-column">
         <div class="container">{% block content %} {% endblock content %}</div>
       </div>
-      <div class="dashboard-footer">
+      <!-- <div class="dashboard-footer">
         <p class="text-center">{{domain}}</p>
-      </div>
+      </div> -->
       <!---->
     </div>
+    <footer class="footer" id="contact">
+      <!-- Footer Top Area Starts -->
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Widget Starts -->
+            <div class="col-sm-4 col-md-2">
+              <h4>Our Company</h4>
+              <div class="menu">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'pricing' %}">Packages</a></li>
+                  <li><a href="{% url 'support' %}">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Footer Widget Ends -->
+            <!-- Footer Widget Starts -->
+            <div class="col-sm-4 col-md-2">
+              <h4>Help & Support</h4>
+              <div class="menu">
+                <ul>
+                  <li><a href="{% url 'sign_up' %}">Register</a></li>
+                  <li><a href="{% url 'sign_in' %}">Login</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Footer Widget Ends -->
+            <!-- Footer Widget Starts -->
+            <div class="col-sm-4 col-md-3">
+              <h4>Contact Us</h4>
+              <div class="contacts">
+                <div>
+                  <span>Info@{{ domain }}</span>
+                </div>
+                <div>
+                  <span></span>
+                </div>
+                <!--<div>-->
+                <!--<span>4251 Summerhill Road, Texarkana, 75503-->
+                <!--Texas, USA.</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>mon-sun 24/7</span>-->
+                <!--</div>-->
+              </div>
+              <!-- Social Media Profiles Starts -->
+              <div class="social-footer">
+                <ul>
+                  <li>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=12366833810&amp;text=Give%20Me%20further%20Information%20about%20Altegris%20"
+                      target="_blank"
+                      ><i class="fab fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-google-plus"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Social Media Profiles Ends -->
+            </div>
+            <!-- Footer Widget Ends -->
+            <!-- Footer Widget Starts -->
+            <div class="col-sm-12 col-md-5">
+              <!-- Facts Starts -->
+              <div class="facts-footer">
+                <div>
+                  <h5>$198.76B</h5>
+                  <span>Market cap</span>
+                </div>
+                <div>
+                  <h5>243K</h5>
+                  <span>daily transactions</span>
+                </div>
+                <div>
+                  <h5>369K</h5>
+                  <span>active accounts</span>
+                </div>
+                <div>
+                  <h5>127</h5>
+                  <span>supported countries</span>
+                </div>
+              </div>
+              <!-- Facts Ends -->
+
+              <hr />
+              <!-- Supported Payment Cards Logo Starts -->
+              <div class="payment-logos">
+                <h4 class="payment-title">supported payment methods</h4>
+                <img src="/assets/images/eth.png" alt="ethereum" />
+                <img src="/assets/images/bitcoin_cash.png" alt="bitcoin_cash" />
+                <img src="/assets/images/bitcoin_image.jfif" alt="visa" />
+              </div>
+              <!-- Supported Payment Cards Logo Ends -->
+            </div>
+            <!-- Footer Widget Ends -->
+          </div>
+        </div>
+      </div>
+      <!-- Footer Top Area Ends -->
+      <!-- Footer Bottom Area Starts -->
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- Copyright Text Starts -->
+              <p class="text-center">
+                Copyright &copy; 2022 ALTEGRIS. All Rights Reserved
+              </p>
+              <!-- Copyright Text Ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom Area Ends -->
+    </footer>
     <div class="toggle-menu">
       <span><i class="fas fa-bars" id="togglebar"></i></span>
     </div>
