@@ -148,20 +148,16 @@
                   />
                 </div>
                 <div class="tanktxt">
-                  <h1 style="font-family: 'Lato', Helvetica, Arial, sans-serif">
-                    Your Withdrawal Has Been {{status.capitalize}}
-                  </h1>
-                  <p
+                  <h1
                     style="
+                      text-transform: capitalize;
                       font-family: 'Lato', Helvetica, Arial, sans-serif;
-                      font-size: 18px;
-                      font-weight: 400;
-                      line-height: 25px;
                     "
                   >
-                    {{transaction.user.username}} your withdrawal has been
-                    {{status}}
-                  </p>
+                    {{transaction.user.username}} your withdrawal has been sent
+                    to your provided payment account successfully
+                  </h1>
+
                   <h4 style="font-size: 20px; font-weight: 400">
                     Invoice ID:
                     <small
