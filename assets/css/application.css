@@ -2051,3 +2051,567 @@ section.contact {
     visibility: visible;
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+  .section-main {
+    padding: 50px 0;
+  }
+
+  .section-main .section-title {
+    font-family: "PFBeauSansPro-Bold";
+    margin-bottom: 20px;
+  }
+
+  .section-main .section-title span {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  .plan-current {
+    padding: 7% 0 3% 15%;
+    position: relative;
+  }
+
+  .plan-current:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(195, 210, 210, 0.47);
+  }
+
+  .plan-current li {
+    margin-bottom: 20px;
+  }
+
+  .plan-current li:last-child {
+    margin-bottom: 0;
+  }
+
+  .plan-current p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 1.125em;
+  }
+
+  .plan-current p span {
+    font-family: "PFBeauSansPro-Bold";
+  }
+
+  .plan-current p span.color-red {
+    color: #da5344;
+  }
+
+  .plans-list {
+    padding: 15px 0;
+  }
+
+  .plans-list.m-plans-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+  }
+
+  .plans-list.m-plans-list .plans-item {
+    padding: 5px;
+    width: 33%;
+  }
+
+  .plans-item {
+    margin-bottom: 6px;
+    padding-left: 10px;
+  }
+
+  .plan-card {
+    max-width: 353px;
+    width: 100%;
+    min-height: 270px;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    padding: 20px 20px 20px 142px;
+    -webkit-transform-origin: 50% 75%;
+    transform-origin: 50% 75%;
+  }
+
+  .plan-card.active {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    z-index: 4;
+    box-shadow: 0 0 70px -40px rgba(0, 0, 0, 0.56);
+  }
+
+  .plan-card.active:before {
+    opacity: 0;
+  }
+
+  .plan-card.active:after {
+    opacity: 1;
+  }
+
+  .plan-card.active .plan-card__descr .color-red {
+    color: #ffffff;
+  }
+
+  .plan-card.active .plan-card__percent {
+    background: #2a2830;
+  }
+
+  .plan-card.active .pay-s {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  .plan-card.active .pay-s .pay-icon:after {
+    opacity: 1;
+  }
+
+  .plan-card:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/bg_plan.png) 0 0 no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .plan-card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/bg_plan-a.png) 0 0 no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .plan-card__percent {
+    background: url(/assets/images/bg_p-percent.png) 0 0 no-repeat;
+    width: 133px;
+    height: 199px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 36px 10px 15px 20px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .plan-card__percent .plan-percent {
+    color: #ffffff;
+    font-size: 3.4375em;
+  }
+
+  .plan-card__percent .plan-term {
+    color: #ffffff;
+    font-size: 0.9375em;
+  }
+
+  .plan-card__descr {
+    font-size: 0.9375em;
+  }
+
+  .plan-card__descr li {
+    margin-bottom: 17px;
+  }
+
+  .plan-card__descr li:last-child {
+    margin-bottom: 0;
+  }
+
+  .plan-card__descr p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  .plan-card__descr p span {
+    font-family: "PFBeauSansPro-Bold";
+  }
+
+  .plan-card__descr p span.color-red {
+    color: #da5344;
+  }
+
+  .plan-card .pay-s .pay-icon {
+    position: relative;
+  }
+
+  .plan-card .pay-s .pay-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .plan-card .pay-s .pay-icon.bitcoin--icon {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -78px;
+    width: 17px;
+    height: 24px;
+  }
+
+  .plan-card .pay-s .pay-icon.bitcoin--icon:after {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -107px;
+    width: 17px;
+    height: 24px;
+  }
+
+  .plan-card .pay-s .pay-icon.litecoin--icon {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -306px;
+    width: 16px;
+    height: 18px;
+  }
+
+  .plan-card .pay-s .pay-icon.litecoin--icon:after {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -283px;
+    width: 16px;
+    height: 18px;
+  }
+
+  .plan-card .pay-s .pay-icon.ethereum--icon {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -255px;
+    width: 13px;
+    height: 23px;
+  }
+
+  .plan-card .pay-s .pay-icon.ethereum--icon:after {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -227px;
+    width: 13px;
+    height: 23px;
+  }
+
+  .pay-s-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+
+  .pay-s {
+    padding: 0 8px 2px;
+  }
+
+  .pay-s .pay-icon {
+    display: block;
+  }
+
+  .pay-s .pay-icon.bitcoin--icon {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -78px;
+    width: 17px;
+    height: 24px;
+  }
+
+  .pay-s .pay-icon.litecoin--icon {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -306px;
+    width: 16px;
+    height: 18px;
+  }
+
+  .pay-s .pay-icon.ethereum--icon {
+    background-image: url(/assets/images/sprite.png);
+    background-position: -357px -255px;
+    width: 13px;
+    height: 23px;
+  }
+
+  .calc-main {
+    position: relative;
+    z-index: 2;
+    padding: 50px 0 40px;
+    color: #ffffff;
+  }
+
+  .calc-main:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(/assets/images/bg_calc.png) 0 0 no-repeat;
+    width: 1647px;
+    height: 545px;
+    right: -120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: -50px;
+  }
+
+  .calc-main .section-title {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .calc-main .form-calc__button {
+    margin-top: -10px;
+  }
+
+  .calc-main .label-title {
+    color: #ffffff;
+  }
+
+  .calc-main .form-calc__range .range-left,
+  .calc-main .form-calc__range .range-right {
+    color: #ffffff;
+  }
+
+  .calc-main .form-calc__range::before {
+    background: url(/assets/images/scale-w.png) repeat-x 0 0;
+  }
+
+  .form-calc-wrap {
+    padding: 7% 15% 3% 0;
+  }
+
+  .form-calc__button {
+    padding-top: 20px;
+  }
+
+  .form-calc .form-item {
+    margin-bottom: 40px;
+  }
+
+  .form-calc .label-title {
+    text-align: center;
+    font-size: 12px;
+    font-family: "PFBeauSansPro-Bold";
+    text-transform: uppercase;
+  }
+
+  .form-calc .amount-invest {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .form-calc .amount-invest span {
+    font-family: "PFBeauSansPro-Bold";
+    font-size: 1.125em;
+    color: #da5344;
+  }
+
+  .form-calc__range {
+    height: 22px;
+    position: relative;
+    width: 100%;
+    background-size: 100%;
+    padding: 8px 0;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+
+  .form-calc__range:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background: url(/assets/images/scale-r.png) repeat-x 0 0;
+    height: 22px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .form-calc__range .ui-widget.ui-widget-content {
+    border: none;
+    background: #cdcdcd;
+    height: 7px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .form-calc__range .ui-widget-content {
+    border: none;
+  }
+
+  .form-calc__range .ui-widget-header {
+    border: none;
+    background: #da5344;
+  }
+
+  .form-calc__range .ui-corner-all,
+  .form-calc__range .ui-corner-bottom,
+  .form-calc__range .ui-corner-right,
+  .form-calc__range .ui-corner-br {
+    border-radius: 2px;
+  }
+
+  .form-calc__range .ui-slider-horizontal .ui-slider-handle {
+    top: -6px;
+  }
+
+  .form-calc__range .ui-state-default,
+  .form-calc__range .ui-widget-content .ui-state-default,
+  .form-calc__range .ui-widget-header .ui-state-default,
+  .form-calc__range .ui-button,
+  .form-calc__range html .ui-button.ui-state-disabled:hover,
+  .form-calc__range html .ui-button.ui-state-disabled:active {
+    border: none;
+    font-weight: normal;
+    border-radius: 0;
+    z-index: 5;
+    background-color: #de3816;
+    box-shadow: inset 0px 1px 5px 0px rgba(0, 1, 3, 0.17);
+    width: 18px;
+    height: 18px;
+    outline: none;
+  }
+
+  .form-calc__range .handle-text {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #da5344;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 4px;
+    line-height: 1;
+    font-family: "PFBeauSansPro-Reg";
+    color: #000000;
+  }
+
+  .form-calc__range .handle-text:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #dc3545;
+    border-top: 0;
+    border-left: 0;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: -3px;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .form-calc__range .range-left,
+  .form-calc__range .range-right {
+    color: #323232;
+    font-size: 12px;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.7;
+  }
+
+  .form-calc__range .range-left {
+    left: 0;
+    top: 24px;
+  }
+
+  .form-calc__range .range-right {
+    top: 24px;
+    right: 0;
+  }
+
+  .block-result {
+    margin-bottom: 40px;
+  }
+
+  .block-result__item {
+    margin-bottom: 12px;
+    font-size: 1.125em;
+  }
+
+  .block-result__value {
+    color: #da5344;
+    font-family: "PFBeauSansPro-Bold";
+  }
+
+  .btn-red.btn--calc {
+    font-size: 13px;
+    font-family: "PFBeauSansPro-Bold";
+    padding: 0 20px;
+    box-shadow: 0px 3px 27px 0px rgb(0 0 0 / 35%);
+  }
+
+  .btn-red {
+    font-family: "PFBeauSansPro-Reg";
+    color: #ffffff;
+    font-size: 1em;
+    height: 51px;
+    line-height: 51px;
+    padding: 0 15px;
+    min-width: 148px;
+    border: 0;
+    border-radius: 0;
+    transition: all 0.4s ease-in-out;
+    background-color: #da5344;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+  }
+
+
+  .section-title span {
+    display: block;
+    color: #da5344;
+    font-family: PFBeauSansPro-Light;
+    text-transform: none;
+}
