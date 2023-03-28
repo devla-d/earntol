@@ -71,13 +71,13 @@
             transform: translateY(-8px) rotate(-45deg);
         }
         #heroslider .carousel-item {
-            height: 100vh;
+            height: 66vh;
         }
         #hero-content {
-            height: 100vh;
+            height: 66vh;
         }
         #hero-content .content1 h3 {
-            font-size: 46px;
+            font-size: 39px;
         }
         #hero-content .content1 .buttons .btn {
             width: 135px;
@@ -91,7 +91,7 @@
             margin-top: 13px !important;
         }
         #hero-content .content1 {
-            padding-top: 150px;
+            padding-top: 106px;
         }
         .about-section .about-section-container .title {
             margin-top: 15px;
@@ -147,10 +147,10 @@
     
     @media only screen and (min-width: 380px) and (max-width: 479px) {
         #hero-content {
-            height: 80vh;
+            height: 66vh;
         }
         #heroslider .carousel-item {
-            height: 80vh;
+            height: 66vh;
         }
     }
  
