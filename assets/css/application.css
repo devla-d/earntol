@@ -468,7 +468,7 @@ Hero section
 }
 
 #heroslider .carousel-item {
-    height: 100vh;
+    height: 80vh;
     color: #fff;
     background-position: 50% 50%;
     -webkit-background-size: cover;
@@ -489,12 +489,12 @@ Hero section
     background: rgba(242, 231, 182, 0.35);
 
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 
 #hero-content .content1 {
-    padding-top: 220px;
+    padding-top: 186px;
 }
 
 #hero-content .content1 p.title {

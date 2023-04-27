@@ -28,6 +28,11 @@
        justify-content: center;
        align-items: center;
     }
+    .user-statistic__value {
+        
+        font-size: 32px;
+     
+    }
   
 }
 
@@ -42,7 +47,7 @@
         width: 50%;
     }
     .user-statistic__item {
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -55,9 +60,10 @@
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        flex-direction: column;
     }
     .user-statistic__item {
-        width: 50%;
+        width: 100%;
     }
 }
 
