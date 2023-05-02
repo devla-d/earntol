@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.utils import timezone
-
+from django.core.mail import EmailMessage
+from django.template.loader import get_template
 
 from datetime import timedelta
 from uuid import uuid4
@@ -62,3 +63,21 @@ def earnings(amount, perc):
 def trans_code():
     code = str(uuid4()).replace(" ", "-").upper()[:8]
     return code
+
+
+def send_regMail(user):
+    subject = "Tolokamoney -- Email verification"
+    context = {
+        "user": user,
+        "domain": "tolokamoney.com",
+    }
+    message = get_template("auth/welcome.email.html").render(context)
+    mail = EmailMessage(
+        subject=subject,
+        body=message,
+        from_email=EMAIL_ADMIN,
+        to=[user.email],
+        reply_to=[EMAIL_ADMIN],
+    )
+    mail.content_subtype = "html"
+    mail.send(fail_silently=True)
