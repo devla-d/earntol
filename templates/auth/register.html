@@ -1,6 +1,6 @@
 {% extends "layouts/home.html" %} {% load crispy_forms_tags %}
 <!---->
-{% block title %}Create an Account {% endblock title %}
+{% block title %} បង្កើត​គណនី {% endblock title %}
 <!---->
 {% block style %}
 <style>
@@ -13,7 +13,7 @@
 {% block banner %}
 
 <!-------HERO SECTION-->
-{% include "components/banner.html" with name="Sign up" %}
+{% include "components/banner.html" with name="ចុះ​ឈ្មោះ" %}
 <!-------HERO SECTION-->
 {% endblock banner %}
 <!---->
@@ -25,9 +25,9 @@
     <!-- Section Title Starts -->
     <div class="row justify-content-center text-center">
       <div class="col-lg-10">
-        <h2 class="title-head">Create an <span>account</span></h2>
+        <h2 class="title-head">បង្កើត <span>គណនី</span></h2>
         <div class="title-head-subtitle">
-          <p>Let's get Started</p>
+          <p>តោះ​ចាប់ផ្តើម</p>
         </div>
       </div>
     </div>
@@ -70,14 +70,14 @@
             <!-- Input Field Starts -->
             <div class="form-group col-xl-12 text-center">
               <p class="text-capital">
-                already have an account ?
-                <a href="{% url 'sign_in' %}">Login</a>
+                មានគណនីរួចហើយ?
+                <a href="{% url 'sign_in' %}">ចូល</a>
               </p>
             </div>
             <!-- Input Field Ends -->
             <!-- Input Field Starts -->
             <div class="form-group col-md-2 col-2">
-              <button class="btn btn-primary" type="submit">Submit</button>
+              <button class="btn btn-primary" type="submit">ដាក់ស្នើ</button>
             </div>
             <!-- Input Field Ends -->
           </div>

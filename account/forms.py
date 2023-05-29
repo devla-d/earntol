@@ -20,7 +20,7 @@ class RegisterForm(UserCreationForm):
             attrs={
                 "type": "text",
                 "class": "form-control",
-                "placeholder": "Fullname",
+                "placeholder": "ឈ្មោះ​ពេញ",
                 "autocomplete": False,
             }
         ),
@@ -33,7 +33,7 @@ class RegisterForm(UserCreationForm):
             attrs={
                 "type": "tel",
                 "class": "form-control",
-                "placeholder": "Phone Number",
+                "placeholder": "លេខទូរសព្ទ",
                 "autocomplete": False,
             }
         ),
@@ -46,7 +46,7 @@ class RegisterForm(UserCreationForm):
             attrs={
                 "type": "email",
                 "class": "form-control",
-                "placeholder": "Email",
+                "placeholder": "អ៊ីមែល",
                 "autocomplete": False,
             }
         ),
@@ -59,7 +59,7 @@ class RegisterForm(UserCreationForm):
             attrs={
                 "type": "text",
                 "class": "form-control",
-                "placeholder": "Username",
+                "placeholder": "ឈ្មោះ​អ្នកប្រើប្រាស់",
                 "autocomplete": False,
             }
         ),
@@ -73,7 +73,7 @@ class RegisterForm(UserCreationForm):
         label=" ",
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Password",
+                "placeholder": "ពាក្យសម្ងាត់",
                 "class": "form-control",
                 "autocomplete": False,
             }
@@ -85,7 +85,7 @@ class RegisterForm(UserCreationForm):
         label="",
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Comfirm Password",
+                "placeholder": "បញ្ជាក់ពាក្យសម្ងាត់",
                 "class": "form-control",
                 "autocomplete": False,
             }
@@ -101,18 +101,18 @@ class LoginForm(forms.ModelForm):
     email = forms.EmailField(
         max_length=80,
         widget=forms.TextInput(
-            attrs={"type": "email", "class": "form-control", "placeholder": "Email"}
+            attrs={"type": "email", "class": "form-control", "placeholder": "អ៊ីមែល"}
         ),
-        label="Email",
+        label="អ៊ីមែល",
         required=True,
     )
     password = forms.CharField(
         max_length=30,
         min_length=6,
-        label="Password",
+        label="ពាក្យសម្ងាត់",
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Password",
+                "placeholder": "ពាក្យសម្ងាត់",
                 "class": "form-control",
             }
         ),
@@ -127,4 +127,6 @@ class LoginForm(forms.ModelForm):
             if not authenticate(
                 email=self.cleaned_data["email"], password=self.cleaned_data["password"]
             ):
-                raise forms.ValidationError("Invalid Username and Password")
+                raise forms.ValidationError(
+                    "ឈ្មោះអ្នកប្រើ និងពាក្យសម្ងាត់មិនត្រឹមត្រូវ"
+                )

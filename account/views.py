@@ -18,7 +18,7 @@ def sign_up(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.info(request, "Registration successful you can now Sign in")
+            messages.info(request, "ការចុះឈ្មោះបានជោគជ័យ ឥឡូវនេះអ្នកអាចចូលបាន។")
             return redirect("sign_in")
     else:
         form = RegisterForm()
@@ -43,7 +43,7 @@ def sign_in(request):
                 else:
                     return redirect("dashboard")
         else:
-            messages.warning(request, ("Invalid Username Or Password."))
+            messages.warning(request, ("ឈ្មោះអ្នកប្រើ ឬពាក្យសម្ងាត់មិនត្រឹមត្រូវ។"))
             return redirect("sign_in")
     else:
         form = LoginForm()

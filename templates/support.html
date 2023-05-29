@@ -1,8 +1,8 @@
 {% extends "layouts/home.html" %}<!---->
-{% block title %} Support {% endblock title %} {% block banner %}
+{% block title %} គាំទ្រ {% endblock title %} {% block banner %}
 
 <!-------HERO SECTION-->
-{% include "components/banner.html" with name="Support" %}
+{% include "components/banner.html" with name="គាំទ្រ" %}
 <!-------HERO SECTION-->
 {% endblock banner %}
 <!---->
@@ -12,11 +12,11 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-8 contact-form">
-        <h3 class="col-xs-12">feel free to drop us a message</h3>
+        <h3 class="col-xs-12">មានអារម្មណ៍សេរីក្នុងការផ្ញើសារមកយើង</h3>
         <p class="col-xs-12">
-          Need to speak to us? Do you have any queries or suggestions? Please
-          contact us about all enquiries including membership and volunteer work
-          using the form below.
+          ត្រូវការនិយាយជាមួយយើង? តើអ្នកមានសំណួរ ឬសំណូមពរទេ? សូម
+          ទាក់ទងមកយើងអំពីការសាកសួរទាំងអស់ រួមទាំងសមាជិកភាព និងការងារស្ម័គ្រចិត្ត
+          ដោយប្រើទម្រង់ខាងក្រោម។
         </p>
         <!-- Contact Form Starts -->
         <form class="form-contact">
@@ -27,7 +27,7 @@
                 class="form-control"
                 name="firstname"
                 id="firstname"
-                placeholder="FIRST NAME"
+                placeholder="ឈ្មោះដំបូង"
                 type="text"
                 required=""
               />
@@ -39,7 +39,7 @@
                 class="form-control"
                 name="lastname"
                 id="lastname"
-                placeholder="LAST NAME"
+                placeholder="នាមត្រកូល"
                 type="text"
                 required=""
               />
@@ -53,7 +53,7 @@
                 class="form-control"
                 name="email"
                 id="email"
-                placeholder="EMAIL"
+                placeholder="អ៊ីមែល"
                 type="email"
                 required=""
               />
@@ -65,7 +65,7 @@
                 class="form-control"
                 name="text"
                 id="subject"
-                placeholder="SUBJECT"
+                placeholder="ប្រធានបទ"
                 type="text"
                 required=""
               />
@@ -79,7 +79,7 @@
                 class="form-control"
                 id="message"
                 name="message"
-                placeholder="MESSAGE"
+                placeholder="សារ"
                 required=""
               ></textarea>
             </div>
@@ -87,8 +87,8 @@
           </div>
           <!-- Submit Form Button Starts -->
           <div class="form-group col-xs-12 col-sm-6">
-            <button class="btn btn-primary btn-contact" type="submit">
-              send message
+            <button class="btn btn-primary btn-contact" type="submit" disabled>
+              ប្រើការគាំទ្រផ្ទាល់
             </button>
           </div>
           <!-- Submit Form Button Ends -->
@@ -108,7 +108,7 @@
             <div class="contact-info-box">
               <i class="fa fa-home big-icon primary-color"></i>
               <div class="contact-info-box-content">
-                <h4>Address</h4>
+                <h4>អាស័យដ្ឋាន</h4>
                 <p>123 Disney Street Slim Av. Brooklyn Bridge, NY, New York</p>
               </div>
             </div>
@@ -126,7 +126,7 @@
             <div class="contact-info-box">
               <i class="fa fa-envelope big-icon primary-color"></i>
               <div class="contact-info-box-content">
-                <h4>Email Addresses</h4>
+                <h4>អាសយដ្ឋានអ៊ីមែល</h4>
 
                 <p>INFO@{{ domain }}</p>
               </div>
@@ -136,7 +136,7 @@
             <div class="contact-info-box">
               <i class="fa fa-share-alt big-icon primary-color"></i>
               <div class="contact-info-box-content">
-                <h4>Social Profiles</h4>
+                <h4>កម្រងព័ត៌មានសង្គម</h4>
                 <div class="social-contact">
                   <ul>
                     <li class="facebook">
