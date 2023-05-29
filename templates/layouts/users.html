@@ -21,7 +21,7 @@
     <header>
       <div id="headerBn">
         <div>
-          <h3 class="text-truncate">Hi, {{user.username}}!</h3>
+          <h3 class="text-truncate">សួស្តី, {{user.username}}!</h3>
         </div>
       </div>
     </header>
@@ -34,31 +34,31 @@
             <li>
               <a href="{% url 'dashboard' %}"
                 ><i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashbaord</span>
+                <span>ផ្ទាំងគ្រប់គ្រង</span>
               </a>
             </li>
 
             <li>
               <a href="{% url 'withdraw' %}">
                 <i class="far fa-fw fa-credit-card"></i>
-                <span>Withdraw</span></a
+                <span>ដក</span></a
               >
             </li>
             <li>
               <a href="{% url 'transactions' %}">
                 <i class="fas fa-fw fa-history"></i>
-                <span>Transactions</span>
+                <span>ប្រតិបត្តិការ</span>
               </a>
             </li>
 
             <li>
               <a href="{% url 'settings' %}">
-                <i class="fas fa-fw fa-cog fa-"></i> <span>Settings</span></a
+                <i class="fas fa-fw fa-cog fa-"></i> <span>ការកំណត់</span></a
               >
             </li>
             <li>
               <a href="{% url 'sign_out' %}">
-                <i class="fas fa-fw fa-sign-out-alt"></i><span>Logout</span>
+                <i class="fas fa-fw fa-sign-out-alt"></i><span>ចាកចេញ</span>
               </a>
             </li>
           </ul>
@@ -81,31 +81,31 @@
           <div class="row">
             <!-- Footer Widget Starts -->
             <div class="col-sm-4 col-md-2">
-              <h4>Our Company</h4>
+              <h4>ក្រុមហ៊ុន​របស់​យើង</h4>
               <div class="menu">
                 <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="{% url 'about' %}">About</a></li>
-                  <li><a href="{% url 'pricing' %}">Packages</a></li>
-                  <li><a href="{% url 'support' %}">Contact</a></li>
+                  <li><a href="/">ផ្ទះ</a></li>
+                  <li><a href="{% url 'about' %}">អំពី</a></li>
+                  <li><a href="{% url 'pricing' %}">កញ្ចប់</a></li>
+                  <li><a href="{% url 'support' %}">ទំនាក់ទំនង</a></li>
                 </ul>
               </div>
             </div>
             <!-- Footer Widget Ends -->
             <!-- Footer Widget Starts -->
             <div class="col-sm-4 col-md-2">
-              <h4>Help & Support</h4>
+              <h4>ជំនួយ និងគាំទ្រ</h4>
               <div class="menu">
                 <ul>
-                  <li><a href="{% url 'sign_up' %}">Register</a></li>
-                  <li><a href="{% url 'sign_in' %}">Login</a></li>
+                  <li><a href="{% url 'sign_up' %}">ចុះឈ្មោះ</a></li>
+                  <li><a href="{% url 'sign_in' %}">ចូល</a></li>
                 </ul>
               </div>
             </div>
             <!-- Footer Widget Ends -->
             <!-- Footer Widget Starts -->
             <div class="col-sm-4 col-md-3">
-              <h4>Contact Us</h4>
+              <h4>ទាក់ទង​មក​ពួក​យើង</h4>
               <div class="contacts">
                 <div>
                   <span>Info@{{ domain }}</span>
@@ -157,19 +157,19 @@
               <div class="facts-footer">
                 <div>
                   <h5>$198.76B</h5>
-                  <span>Market cap</span>
+                  <span>មូលធនប័ត្រទីផ្សារ</span>
                 </div>
                 <div>
                   <h5>243K</h5>
-                  <span>daily transactions</span>
+                  <span>ប្រតិបត្តិការប្រចាំថ្ងៃ</span>
                 </div>
                 <div>
                   <h5>369K</h5>
-                  <span>active accounts</span>
+                  <span>គណនីសកម្ម</span>
                 </div>
                 <div>
                   <h5>127</h5>
-                  <span>supported countries</span>
+                  <span>ប្រទេសដែលគាំទ្រ</span>
                 </div>
               </div>
               <!-- Facts Ends -->
@@ -179,7 +179,10 @@
               <!-- <div class="payment-logos">
                 <h4 class="payment-title">supported payment methods</h4>
                 <img src="/assets/images/eth.png" alt="ethereum" />
-                <img src="/assets/images/bitcoin_cash.png" alt="bitcoin_cash" />
+                <img
+                  src="/assets/images/bitcoin_cash.png"
+                  alt="bitcoin_cash"
+                />
                 <img src="/assets/images/bitcoin_image.jfif" alt="visa" />
               </div> -->
               <!-- Supported Payment Cards Logo Ends -->
@@ -196,7 +199,7 @@
             <div class="col-xs-12">
               <!-- Copyright Text Starts -->
               <p class="text-center">
-                Copyright &copy; 2022 {{ domain }} . All Rights Reserved
+                រក្សាសិទ្ធិ &copy; 2022 {{ domain }} . រក្សា​រ​សិទ្ធ​គ្រប់យ៉ាង
               </p>
               <!-- Copyright Text Ends -->
             </div>

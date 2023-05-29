@@ -1,5 +1,5 @@
 {% extends "layouts/users.html" %}<!---->
-{% block title %}Account Dashboard {% endblock title %}<!---->
+{% block title %} ផ្ទាំងគ្រប់គ្រងគណនី {% endblock title %}<!---->
 {% block content %}
 <div class="container">
   <div class="user-statistic">
@@ -9,7 +9,7 @@
         <div class="user-statistic__value">
           <span> $<b>{{user.balance}}</b> </span>
         </div>
-        <div class="user-statistic__title">Total Balance</div>
+        <div class="user-statistic__title">សមតុល្យសរុប</div>
       </div>
     </div>
     <div class="user-statistic__item">
@@ -18,7 +18,17 @@
         <div class="user-statistic__value" id="load1">
           <span> $<b>{{user.deposit_balance}}</b> </span>
         </div>
-        <div class="user-statistic__title">deposits Balance</div>
+        <div class="user-statistic__title">សមតុល្យប្រាក់បញ្ញើ</div>
+      </div>
+    </div>
+
+    <div class="user-statistic__item">
+      <div class="user-statistic__card">
+        <div class="user-statistic__icon st4--icon"></div>
+        <div class="user-statistic__value" id="load3">
+          <span> $<b>{{user.total_withdraw}}</b> </span>
+        </div>
+        <div class="user-statistic__title">ដកសរុប</div>
       </div>
     </div>
     <div class="user-statistic__item">
@@ -27,16 +37,7 @@
         <div class="user-statistic__value" id="load2">
           <span> $<b>{{user.vip_reward}}</b> </span>
         </div>
-        <div class="user-statistic__title">VIP Reward</div>
-      </div>
-    </div>
-    <div class="user-statistic__item">
-      <div class="user-statistic__card">
-        <div class="user-statistic__icon st4--icon"></div>
-        <div class="user-statistic__value" id="load3">
-          <span> $<b>{{user.total_withdraw}}</b> </span>
-        </div>
-        <div class="user-statistic__title">Total withdrawn</div>
+        <div class="user-statistic__title">រង្វាន់ VIP</div>
       </div>
     </div>
   </div>
@@ -46,7 +47,7 @@
       <div class="auth-info-card card mb-5">
         <div>
           <div class="auth-info-card-header">
-            <h4 class="text-white">Login History</h4>
+            <h4 class="text-white">ប្រវត្តិចូល</h4>
           </div>
           <div class="auth-info-card-body">
             {% for log in logs %}

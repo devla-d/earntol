@@ -108,10 +108,10 @@ class PasswordChangeForm(forms.ModelForm):
     )
     oldpassword = forms.CharField(
         max_length=30,
-        label="Old password",
+        label="លេខសំងាត់​ចាស់",
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "OLD PASSWORD",
+                "placeholder": "លេខសំងាត់​ចាស់",
                 "class": "input-form",
             }
         ),
@@ -119,10 +119,10 @@ class PasswordChangeForm(forms.ModelForm):
     password1 = forms.CharField(
         max_length=30,
         min_length=6,
-        label="New Password",
+        label="ពាក្យសម្ងាត់​ថ្មី",
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "NEW PASSWORD",
+                "placeholder": "ពាក្យសម្ងាត់​ថ្មី",
                 "class": "input-form",
             }
         ),
@@ -130,10 +130,10 @@ class PasswordChangeForm(forms.ModelForm):
     password2 = forms.CharField(
         max_length=30,
         min_length=6,
-        label="Comfirm Password",
+        label="បញ្ជាក់​លេខសំងាត់​ថ្មី",
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "CONFIRM NEW PASSWORD",
+                "placeholder": "បញ្ជាក់​លេខសំងាត់​ថ្មី",
                 "class": "input-form",
             }
         ),
@@ -151,6 +151,6 @@ class PasswordChangeForm(forms.ModelForm):
             password2 = self.cleaned_data["password2"]
             user = Account.objects.get(id=user_id)
             if not user.check_password(oldpassword):
-                raise forms.ValidationError("Old password don't match")
+                raise forms.ValidationError("ពាក្យសម្ងាត់ចាស់មិនត្រូវគ្នា។")
             if password1 != password2:
-                raise forms.ValidationError("Passwords don't match")
+                raise forms.ValidationError("ពាក្យសម្ងាត់មិនត្រូវគ្នាទេ។")

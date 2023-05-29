@@ -40,10 +40,10 @@ def withdraw(request):
             user.balance -= amount
             user.save()
             transaction.save()
-            messages.success(request, ("Withdrawal Placed !"))
+            messages.success(request, ("កន្លែងដកប្រាក់!"))
             return redirect("withdraw")
         else:
-            messages.warning(request, ("Insufficient Funds!"))
+            messages.warning(request, ("ថវិកាមិនគ្រប់គ្រាន់!"))
             return redirect("withdraw")
 
     return render(request, "users/withdrawal.html")
@@ -64,7 +64,7 @@ def settings(request):
             password1 = p_form.cleaned_data["password1"]
             user.set_password(password1)
             user.save()
-            messages.success(request, f"Password Change")
+            messages.success(request, f"ការផ្លាស់ប្តូរពាក្យសម្ងាត់")
             return redirect("settings")
     else:
         p_form = PasswordChangeForm(initial={"user_id": user.id})

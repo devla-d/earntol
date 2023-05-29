@@ -1,13 +1,15 @@
 {% extends "layouts/users.html" %}<!---->
-{% block title %} Transaction history {% endblock title %}<!---->
+{% block title %} ប្រវត្តិប្រតិបត្តិការ {% endblock title %}<!---->
 {% block content %}
 <div class="container-fluid">
   <!---content-->
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Transactions</h1>
+    <h1 class="h3 mb-0 text-gray-800">ប្រតិបត្តិការ</h1>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">History</li>
+      <li class="breadcrumb-item"><a href="/">ផ្ទះ</a></li>
+      <li class="breadcrumb-item active" aria-current="page">
+        ប្រវត្តិសាស្ត្រ
+      </li>
     </ol>
   </div>
 
@@ -15,9 +17,9 @@
     <div class="col-lg-12">
       <div class="transaction-table">
         <div class="transac-table-header">
-          <div class="t-head"><b>Type</b></div>
-          <div class="t-head"><b>Amount</b></div>
-          <div class="t-head"><b>Date</b></div>
+          <div class="t-head"><b>ប្រភេទ</b></div>
+          <div class="t-head"><b>ចំនួនទឹកប្រាក់</b></div>
+          <div class="t-head"><b>កាលបរិច្ឆេទ</b></div>
         </div>
         <div class="transac-table-boby">
           {% if transactions %} {% for obj in transactions %}
@@ -31,7 +33,7 @@
           {% endfor %} {% else %}
           <div class="t-row">
             <div class="t-cell" align="center">
-              <span>No Transactions</span>
+              <span>គ្មានប្រតិបត្តិការ</span>
             </div>
           </div>
           {% endif %}
