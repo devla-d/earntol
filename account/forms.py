@@ -27,19 +27,19 @@ class RegisterForm(UserCreationForm):
         label=" ",
         required=True,
     )
-    phone = forms.CharField(
-        max_length=30,
-        widget=forms.TextInput(
-            attrs={
-                "type": "tel",
-                "class": "form-control",
-                "placeholder": "លេខទូរសព្ទ",
-                "autocomplete": False,
-            }
-        ),
-        label=" ",
-        required=True,
-    )
+    # phone = forms.CharField(
+    #     max_length=30,
+    #     widget=forms.TextInput(
+    #         attrs={
+    #             "type": "tel",
+    #             "class": "form-control",
+    #             "placeholder": "លេខទូរសព្ទ",
+    #             "autocomplete": False,
+    #         }
+    #     ),
+    #     label=" ",
+    #     required=True,
+    # )
     email = forms.EmailField(
         max_length=80,
         widget=forms.TextInput(
@@ -94,7 +94,7 @@ class RegisterForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ["email", "username", "fullname", "password1", "password2", "phone"]
+        fields = ["email", "username", "fullname", "password1", "password2"]
 
 
 class LoginForm(forms.ModelForm):
